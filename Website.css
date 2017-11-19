@@ -1,0 +1,130 @@
+html, body {
+    margin: 0;
+    height: 100%;  
+}
+#header {
+    padding-top:3px;
+/*Adjust hight of background color*/
+    height: 260px;
+    margin-top:-30px;
+    text-align: center;
+    font-size:70px;
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: #4C5364;
+    font-family: 'Open Sans', sans-serif;
+}
+img.top {
+    width: 28px;
+    height: 28px;
+    position: relative;
+    top: -85px;
+}
+img.top:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+#about {
+    background-color: #C26868;
+/*Adjust hight of background color of termainal section*/
+    height: 625px;
+    margin-top:-30px;
+}
+.inner {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+#about p {
+  text-align: center;
+  padding-top: 60px;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.3em;
+  font-weight: 700;
+  color: #fafafa;
+  font-size: 12px;
+  text-transform: uppercase;
+
+}
+#code {
+    border-radius: 5px;
+    width:750px;
+    margin: 0 auto;
+    padding-top:15px;
+    font-size:30px;
+    background: #ccc;
+/*Adjust height of terminal box*/
+    height: 400px;
+    font-family: 'Monaco', 'Courier New';
+    text-align: left;
+    font-size:13px;
+    color: #fafafa;
+}
+
+#console {
+    width:670px;
+    padding: 40px;
+    height: 360px;
+    margin:0 auto;
+    background: #383737;
+}
+
+span.answer {
+    color:#ccc;
+}
+a.console {
+    color: #ccc;
+}
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+#exp{
+    /*Background of Education-Work*/
+    background-color: #dcdcdc;
+    height: 1400px;
+    
+}
+#resume {
+    border-radius: 5px;
+    width:750px;
+    margin: 0 auto;
+    padding-top:15px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.1em;
+    font-size:17px;
+    line-height: 150%;
+}
+.right {
+    float: right; 
+}
+#title {
+    font-size:18px;
+    line-height: 30px;
+}
+img.icon {
+  width: 65px;
+  height: 65px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius:50%;
+  float: left;
+  display: block;
+  margin-left: -95px;
+  margin-top: 5px;
+  background-color: #fff;
+  opacity: 0.8;
+  z-index: 0;
+}
+
+img.icon:hover {
+    opacity: 0.3;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
