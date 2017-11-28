@@ -19,7 +19,9 @@ img.top {
     width: 28px;
     height: 28px;
     position: relative;
-    top: -85px;
+    top: -80px;
+    border:2px solid white;
+    padding: 5px;
 }
 img.top:hover {
     opacity: 0.5;
