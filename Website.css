@@ -3,25 +3,37 @@ html, body {
     height: 100%;  
 }
 #header {
-    padding-top:3px;
+    padding-top:1px;
 /*Adjust hight of background color*/
     height: 260px;
-    margin-top:-25px;
+    margin-top:-60px;
     text-align: center;
     font-size:70px;
-    position: relative;
-    text-align: center;
     color: white;
     background-color: #4C5364;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
 }
+
+#nav{
+  background: #4C5364;
+  min-height: 30px;
+  text-align: left;
+  color: #fafafa;
+  padding-top: 25px;
+  font-size: 18px;
+  line-height: 10px;
+  font-family: 'Ubuntu', sans-serif;
+    
+}
+
 img.top {
     width: 25px;
     height: 25px;
     position: relative;
     top: -80px;
     border:2px solid white;
+    border-radius: 10px;
     padding: 5px;
 }
 img.top:hover {
@@ -37,7 +49,7 @@ img.top:hover {
 #about {
     background-color: #C26868;
 /*Adjust hight of background color of termainal section*/
-    height: 700px;
+    height: 720px;
     margin-top:-30px;
     
 }
@@ -139,9 +151,9 @@ hr {
   border-width: 1px;
 }
 #exp{
-    /*Background of Education-Work*/
-    background-color: #dcdcdc;
-    height: 1425px;
+    /*Background color of Education-Work*/
+    background-color: #efeeeb;
+    height: 1550px;
     
 }
 #resume {
@@ -209,7 +221,7 @@ img.icon:hover {
   padding-top: 25px;
   font-size: 15px;
   line-height: 10px;
-    font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 a.link { 
