@@ -1,2 +1,3 @@
 # Personal-Website
-HTML and CSS code for my personal website
+HTML, JS, and CSS code for my personal website
+(www.christophertross.com)
