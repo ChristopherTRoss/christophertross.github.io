@@ -57,7 +57,7 @@ img.top:hover {
 #about {
     background-color: #C26868;
 /*Adjust hight of background color of termainal section*/
-    height: 720px;
+    height: 740px;
     
 }
 
@@ -81,17 +81,18 @@ img.top:hover {
     font-size:30px;
     background: #ccc;
 /*Adjust height of terminal box*/
-    height: 355px;
+    height: 25px;
     font-family: Verdana, Geneva, sans-serif;
     text-align: left;
-    font-size:13px;
+    font-size:13.5px;
     color: #fafafa;
+    
 }
 
 #console {
     width:670px;
     padding: 40px;
-    height: 370px;
+    height: 390px;
     margin:0 auto;
     background: #383737;
 }
@@ -231,7 +232,13 @@ img.icon:hover {
   top: 10px;
 }
 
-a{ 
+.bottom {
+    color: #fafafa;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#menu-center a{ 
     color: #fafafa;
     text-decoration: none;
     border:0 solid #FFF;

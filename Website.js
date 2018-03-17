@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $(document).on("scroll", onScroll);
     
-    //smoothscroll
+    //Smooth scroll
     $('a[href^="#"]').on('click', function (e) {
        
         $(document).off("scroll");
@@ -23,7 +23,7 @@ $(document).ready(function () {
     });
 });
 
-//Underlines tab on navbar based on psoiton on site
+//Underlines tab on navbar based on positon on site
 function onScroll(event){
     var scrollPos = $(document).scrollTop();
     $('#menu-center a').each(function () {
