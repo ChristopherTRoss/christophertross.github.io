@@ -2,10 +2,30 @@ html, body {
     margin: 0;
     height: 100%;  
 }
+
+#nav{
+    min-height: 30px;
+    position: fixed;
+    padding-top: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    height:15px;
+    width:100%;
+    line-height:15px;
+    background:#4C5364;
+    font-size:19px;
+    top:0;
+    z-index: 500;
+    
+}
+
+#menu-center a:hover {
+    border-bottom-width:3px !important;
+}
+
 #header {
-    padding-top:1px;
+    padding-top:50px;
 /*Adjust hight of background color*/
-    height: 260px;
+    height: 250px;
     margin-top:-60px;
     text-align: center;
     font-size:70px;
@@ -13,18 +33,6 @@ html, body {
     background-color: #4C5364;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
-}
-
-#nav{
-  background: #4C5364;
-  min-height: 30px;
-  text-align: left;
-  color: #fafafa;
-  padding-top: 25px;
-  font-size: 18px;
-  line-height: 10px;
-  font-family: 'Ubuntu', sans-serif;
-    
 }
 
 img.top {
@@ -50,7 +58,6 @@ img.top:hover {
     background-color: #C26868;
 /*Adjust hight of background color of termainal section*/
     height: 720px;
-    margin-top:-30px;
     
 }
 
@@ -58,7 +65,6 @@ img.top:hover {
     border-radius: 5px;
     width:750px;
     margin: 0 auto;
-    padding-top:15px;
     text-align: left;
     padding-top: 60px;
     font-family: 'Open Sans', sans-serif;
@@ -153,11 +159,11 @@ hr {
 #exp{
     /*Background color of Education-Work*/
     background-color: #efeeeb;
-    height: 1550px;
+    height: 1600px;
     
 }
 #resume {
-    border-radius: 5px;
+    border-radius: 2px;
     width:750px;
     margin: 0 auto;
     padding-top:15px;
@@ -218,17 +224,30 @@ img.icon:hover {
   min-height: 30px;
   text-align: left;
   color: #fafafa;
-  padding-top: 25px;
+  padding-top: 18px;
   font-size: 15px;
   line-height: 10px;
   font-family: 'Open Sans', sans-serif;
+  top: 10px;
 }
 
-a.link { 
+a{ 
     color: #fafafa;
     text-decoration: none;
-    
+    border:0 solid #FFF;
+    border-bottom-width:0;
+} 
+
+.link, a.link:hover { 
+    border-bottom-width:3px !important;
+    color: #fafafa;
+    text-decoration: none;
+    border:0 solid #FFF;
+    border-bottom-width:0;
 }
-a.link:hover { 
+
+.bottom:hover {
     opacity: 0.5;
+    filter: alpha(opacity=50);
 }
+
