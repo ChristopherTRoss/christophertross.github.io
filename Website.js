@@ -23,7 +23,7 @@ $(document).ready(function () {
     });
 });
 
-//Underlines tab on navbar based on positon on site
+//Underlines tab on navbar based on position on site
 function onScroll(event){
     var scrollPos = $(document).scrollTop();
     $('#menu-center a').each(function () {
