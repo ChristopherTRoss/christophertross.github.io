@@ -31,6 +31,7 @@ html, body {
     font-size:70px;
     color: white;
     background-color: #4C5364;
+    min-width: 750px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
 }
@@ -58,6 +59,7 @@ img.top:hover {
     background-color: #C26868;
 /*Adjust hight of background color of termainal section*/
     height: 740px;
+    min-width: 750px;
     
 }
 
@@ -158,9 +160,10 @@ hr {
   border-width: 1px;
 }
 #exp{
-    /*Background color of Education-Work*/
+    /*Background color of Education-Projects*/
     background-color: #efeeeb;
-    height: 1600px;
+    height: auto;
+    min-width: 750px;
     
 }
 #resume {
@@ -220,9 +223,27 @@ img.icon:hover {
   border-radius: 8px;
 }
 
+.projects {
+  text-decoration: none;
+    color: black;
+}
+
+.projects:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.projectLink {
+    color:black;
+}
+.projectLink:hover {
+    opacity: 0.3;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
 #footer{
   background: #4C5364;
   min-height: 30px;
+  min-width: 750px;
   text-align: left;
   color: #fafafa;
   padding-top: 18px;
