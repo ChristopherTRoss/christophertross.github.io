@@ -36,14 +36,18 @@ html, body {
     font-weight: bold;
 }
 
+p.name{
+    margin-bottom: 0px;
+}
+
 img.top {
     width: 25px;
     height: 25px;
     position: relative;
-    top: -80px;
     border:2px solid white;
     border-radius: 10px;
     padding: 5px;
+    margin-left: 10px;
 }
 img.top:hover {
     opacity: 0.5;
