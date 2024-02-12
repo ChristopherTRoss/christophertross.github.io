@@ -211,29 +211,6 @@ hr {
     padding-top: 1em;
 }
 
-img.icon {
-    width: 65px;
-    height: 65px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-    float: left;
-    display: block;
-    margin-left: -95px;
-    margin-top: 5px;
-    background-color: #fff;
-    opacity: 0.9;
-    z-index: 0;
-}
-
-img.icon:hover {
-    opacity: 0.3;
-    filter: alpha(opacity=50);
-    /* For IE8 and earlier */
-}
-
 .resume-card {
     padding: 1.5em;
     background-color: #efeeeb;
