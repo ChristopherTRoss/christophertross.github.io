@@ -10,4 +10,8 @@ import { MatCardModule } from '@angular/material/card';
 })
 export class PersonalWebsiteComponent {
 
+  routeToLink(url: string) {
+    window.location.href = url;
+  }
+  
 }

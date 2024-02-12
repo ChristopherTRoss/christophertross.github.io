@@ -203,8 +203,12 @@ hr {
 }
 
 #title {
-    font-size: 18px;
-    line-height: 30px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#activites {
+    padding-top: 1em;
 }
 
 img.icon {
@@ -228,6 +232,19 @@ img.icon:hover {
     opacity: 0.3;
     filter: alpha(opacity=50);
     /* For IE8 and earlier */
+}
+
+.resume-card {
+    padding: 1.5em;
+    background-color: #efeeeb;
+    box-shadow: none;
+    border: 2px solid #6495ED;
+    border-radius: 15px / 15px;
+}
+
+.resume-card:hover {
+    box-shadow: 1px 8px 20px rgb(188, 187, 187);
+    -webkit-transition:  box-shadow .1s ease-in;
 }
 
 .skill {
@@ -262,12 +279,6 @@ img.icon:hover {
     color: black;
 }
 
-.projectLink:hover {
-    opacity: 0.3;
-    filter: alpha(opacity=50);
-    /* For IE8 and earlier */
-}
-
 .project-card {
     width: 49%;
     padding: 1em;
@@ -280,6 +291,7 @@ img.icon:hover {
 .project-card:hover {
     box-shadow: 1px 8px 20px rgb(188, 187, 187);
     -webkit-transition:  box-shadow .1s ease-in;
+    cursor: pointer;
 }
 
 #card-spacing {
