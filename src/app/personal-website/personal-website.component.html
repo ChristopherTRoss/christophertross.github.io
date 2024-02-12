@@ -25,13 +25,11 @@
                 </a>
             </div>
         </div>
+        <!-- About -->
         <div id="about" ngbScrollSpyFragment="about">
             <div class="inner">
                 <div id="aboutMe">
-                    <b>About Me</b>
-                    <hr>
-                    <p>I am a senior computer science student at Louisiana State University (LSU) and an aspiring
-                        software engineer.</p>
+                    <p>Hi! I am a software engineer</p>
                     <br>
                 </div>
                 <div id="code">
@@ -50,9 +48,6 @@
                         &gt; Chris.interest<br />
                         <span class="answer">&nbsp;&nbsp;=&gt; ["Coding", "Design", "Running",
                             "Traveling"]<br /><br /></span>
-                        &gt; Chris.resume<br />
-                        <span class="answer">&nbsp;&nbsp;=&gt; <a target="_blank" class="console"
-                                href="ChrisRoss.pdf">ChrisRoss.pdf</a><br /><br /></span>
                         &gt;<span class="blink"> _</span>
                     </div>
                 </div>
@@ -62,6 +57,7 @@
             <div id="resume">
                 <div class="inner">
                     <br><br>
+                    <!-- Education -->
                     <b>Education</b>
                     <hr>
                     <br>
@@ -103,6 +99,7 @@
                     <span class="skill">CSS</span>
                     <span class="skill">SAS</span>
                     <br>
+                    <!-- Work Experience -->
                     <div id="work">
                         <br><br><br>
                         <b>Work</b>
@@ -125,7 +122,9 @@
                         <span class="skill">AngularJS</span>
                         <span class="skill">HTML</span>
                         <span class="skill">CSS</span>
+
                         <br><br><br>
+
                         <a href="https://www.jacobs.com"><img class="icon" src="../../assets/logos/Jacobs.png"></a>
                         <div id="title">
                             <b>Software Engineer Intern</b>
@@ -143,58 +142,59 @@
                         <span class="skill">PHP</span>
                         <span class="skill">JS</span>
                         <span class="skill">CSS</span>
+
                         <br><br><br>
-                        <a href="https://www.louisianabelieves.com/"><img class="icon" src="../../assets/logos/LDOE.jpg"></a>
-                        <div id="title">
-                            <b>Student Worker</b>
-                            <span class="right"><i>November 2016 - Present</i></span><br /><b>Louisiana Department of
-                                Education</b>
-                            <span class="right"><i>Baton Rouge, LA</i></span><br />
-                        </div>
-                        <ul style="list-style:circle;">
-                            <li>Perform multiple office tasks such as developing spreadsheets, analyzing data and
-                                providing ad hoc support </li>
-                            <li>Provide technical support to office staff as required </li>
-                            <li>Assist with project work assigned by superiors </li>
-                        </ul>
-                        <span class="skill">Word</span>
-                        <span class="skill">Excel</span>
+
                     </div>
                 </div>
+                <!-- Personal projects -->
                 <div id="projects">
                     <br><br><br>
                     <b>Personal Projects</b>
                     <hr><br>
-                    <b><a class="projects">BudgetMaster</a></b><br>
-                    <ul style="list-style:circle;">
-                        <li> A budgeting Android application that allows users to easily keep track of budgets and
+
+                    <div style="display: flex;">
+                        <mat-card class="project-card">
+                            <div class="projects-title" href="https://github.com/ChristopherTRoss/BudgetMaster">
+                                BudgetMaster
+                            </div>
+                            A budgeting Android application that allows users to easily keep track of budgets and
                             day-to-day spending. Users may enter their monthly income and divide it into smaller expense
                             categories (e.g. entertainment, gas, groceries, etc.). The application will provide an
                             intuitive user interface and a budget analysis to encourage users to keep track of their
-                            spending.</li>
-                        <li><a href="https://github.com/ChristopherTRoss/BudgetMaster" class="projectLink">Github
-                                Link</a></li>
-                    </ul>
+                            spending.
+                            <div class="skill-container">
+                                <span class="skill">Java</span>
+                            </div>                        </mat-card>
+                        <mat-card class="project-card" id="card-spacing">
+                            <div class="projects-title" href="https://github.com/ChristopherTRoss/LsuEats">LSUEats
+                            </div>
+                            An Android application that allows users to pick preferences for meals around LSU's campus,
+                            then based on those preferences, generates a meal for the user. The different preferences
+                            are location,
+                            food type, and price range. Users can select and deselect multiple preferences.
+                            <div class="skill-container">
+                                <span class="skill">Java</span>
+                            </div>                        </mat-card>
+                    </div>
 
-                    <b><a class="projects">LSUEats</a></b><br>
-                    <ul style="list-style:circle;">
-                        <li> An Android application that allows users to pick preferences for meals around LSU's campus,
-                             then based on those preferences, generates a meal for the user. The different preferences are location,
-                              food type, and price range. Users can select and deselect multiple preferences.</li>
-                        <li><a href="https://github.com/ChristopherTRoss/LsuEats" class="projectLink">Github Link</a>
-                        </li>
-                    </ul>
-
-                    <b><a class="projects">Budget+</a></b><br>
-                    <ul style="list-style:circle;">
-                        <li> A Java app used to plan out a budget, savings, and track/categorize expenses.</li>
-                        <li><a href="https://github.com/ChristopherTRoss/budget-plus" class="projectLink">Github Link</a>
-                        </li>
-                    </ul>
-                    <br>
+                    <div style="display: flex; padding-top: 20px;">
+                        <mat-card class="project-card">
+                            <div class="projects-title" href="https://github.com/ChristopherTRoss/BudgetMaster">
+                                Budget+
+                            </div>
+                            A Java app used to plan out a budget, savings, and track/categorize expenses.
+                            <div class="skill-container">
+                                <span class="skill">Java</span>
+                                <span class="skill">HTML</span>
+                                <span class="skill">CSS</span>
+                            </div>
+                        </mat-card>
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- Footer -->
         <div id="footer">
             <div class="inner">
                 <span class="right">
