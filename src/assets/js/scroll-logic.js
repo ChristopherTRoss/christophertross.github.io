@@ -15,7 +15,7 @@ $(document).ready(function () {
         menu = target;
         $target = $(target);
         $('html, body').stop().animate({
-            'scrollTop': $target.offset().top - 45
+            'scrollTop': $target.offset().top - 60
         }, 500, 'swing', function () {
             window.location.hash = target;
             $(document).on("scroll", onScroll);
@@ -29,7 +29,7 @@ function onScroll(event){
     $('#menu-center a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
-        if (refElement.position().top- 45 <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+        if (refElement.position().top- 60 <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
             $('#menu-center a').removeClass("link");
             currLink.addClass("link");
         }

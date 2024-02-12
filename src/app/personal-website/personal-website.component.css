@@ -24,12 +24,11 @@ body {
 }
 
 #header {
-    padding-top: 50px;
-    /*Adjust hight of background color*/
-    height: 250px;
+    padding-top: 70px;
+    padding-bottom: 20px;
     margin-top: -60px;
     text-align: center;
-    font-size: 70px;
+    font-size: 60px;
     color: white;
     background-color: #4C5364;
     min-width: 750px;
@@ -62,25 +61,16 @@ img.top:hover {
     margin: 0 auto;
 }
 
-#about {
-    background-color: #C26868;
-    /*Adjust hight of background color of termainal section*/
-    height: 740px;
-    min-width: 750px;
-
+.inner-terminal {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
 
-#aboutMe {
-    border-radius: 5px;
-    width: 750px;
-    margin: 0 auto;
-    text-align: left;
-    padding-top: 60px;
-    font-family: 'Open Sans', sans-serif;
-    letter-spacing: 0.1em;
-    color: #fafafa;
-    font-size: 17px;
-
+#about {
+    background-color: #C26868;
+    min-width: 750px;
 }
 
 #code {
@@ -95,13 +85,12 @@ img.top:hover {
     text-align: left;
     font-size: 13.5px;
     color: #fafafa;
-
+    height: 100%;
 }
 
 #console {
     width: 670px;
     padding: 40px;
-    height: 390px;
     margin: 0 auto;
     background: #383737;
 }
@@ -109,7 +98,7 @@ img.top:hover {
 #dot1 {
     height: 11px;
     width: 11px;
-    background-color: #FF0000;
+    background-color: #FF605C;
     border-radius: 50%;
     /*Adjust height and position of dots*/
     position: relative;
@@ -120,7 +109,7 @@ img.top:hover {
 #dot2 {
     height: 11px;
     width: 11px;
-    background-color: #ffdd1a;
+    background-color: #FFBD44;
     border-radius: 50%;
     /*Adjust height and position of dots*/
     position: relative;
@@ -131,7 +120,7 @@ img.top:hover {
 #dot3 {
     height: 11px;
     width: 11px;
-    background-color: #00FF00;
+    background-color: #00CA4E;
     border-radius: 50%;
     /*Adjust height and position of dots*/
     position: relative;
@@ -187,11 +176,11 @@ hr {
 
 }
 
-#resume {
+#education {
     border-radius: 2px;
     width: 750px;
     margin: 0 auto;
-    padding-top: 15px;
+    padding-top: 1px;
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 0.1em;
     font-size: 17px;
