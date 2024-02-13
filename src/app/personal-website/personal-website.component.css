@@ -36,6 +36,10 @@ body {
     font-weight: bold;
 }
 
+#education, #work, #projects {
+    padding-top: 35px;
+}
+
 p.name {
     margin-bottom: 0px;
 }
@@ -180,7 +184,6 @@ hr {
     border-radius: 2px;
     width: 750px;
     margin: 0 auto;
-    padding-top: 1px;
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 0.1em;
     font-size: 17px;

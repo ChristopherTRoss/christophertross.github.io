@@ -1,6 +1,5 @@
 $(document).ready(function () {
     $(document).on("scroll", onScroll);
-    
     //Smooth scroll
     $('a[href^="#"]').on('click', function (e) {
        
