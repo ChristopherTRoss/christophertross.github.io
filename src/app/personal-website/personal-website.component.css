@@ -53,6 +53,12 @@ img.top {
     margin-left: 10px;
 }
 
+img.top:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    /* For IE8 and earlier */
+}
+
 .inner {
     max-width: 1024px;
     margin: 0 auto;
@@ -80,7 +86,7 @@ img.top {
     height: 25px;
     font-family: Verdana, Geneva, sans-serif;
     text-align: left;
-    font-size: 13.5px;
+    font-size: 15px;
     color: #fafafa;
     height: 100%;
 }
@@ -90,6 +96,8 @@ img.top {
     padding: 40px;
     margin: 0 auto;
     background: #383737;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px
 }
 
 #dot1 {
@@ -166,7 +174,7 @@ hr {
 }
 
 #exp {
-    background-color: #efeeeb;
+    background-color: #ffffff;
     height: auto;
     min-width: 750px;
 }
@@ -196,14 +204,14 @@ hr {
 
 .resume-card {
     padding: 1.5em;
-    background-color: #efeeeb;
+    background-color: #ffffff;
     box-shadow: none;
     border: 2px solid #6495ED;
     border-radius: 15px / 15px;
 }
 
 .resume-card:hover {
-    box-shadow: 1px 8px 20px rgb(188, 187, 187);
+    box-shadow: 0px 8px 20px rgb(188, 187, 187);
     -webkit-transition:  box-shadow .1s ease-in;
 }
 
@@ -242,14 +250,14 @@ hr {
 .project-card {
     width: 49%;
     padding: 1em;
-    background-color: #efeeeb;
+    background-color: #ffffff;
     box-shadow: none;
     border: 2px solid #6495ED;
     border-radius: 5%;
 }
 
 .project-card:hover {
-    box-shadow: 1px 8px 20px rgb(170, 168, 168);
+    box-shadow: 0px 8px 20px rgb(170, 168, 168);
     -webkit-transition:  box-shadow .1s ease-in;
     cursor: pointer;
 }
@@ -293,11 +301,41 @@ a.link:hover {
     border-bottom-width: 3px !important;
     color: #fafafa;
     text-decoration: none;
-    border: 0 solid #FFF;
+    border: 1px solid #FFF;
     border-bottom-width: 0;
 }
 
-.bottom:hover {
-    opacity: 0.5;
-    filter: alpha(opacity=50);
+.mat-icon {
+    vertical-align: middle;
+}
+
+#arrow-icon {
+    color: #2c6fbb;
+    transition: transform 0.3s ease;
+    transform: translateX(0px);
+}
+
+#title-icon {
+    color: #2c6fbb;
+    padding-left: 0.25em;
+}
+
+#view-projects {
+    margin-top: 1.75em;
+    width: fit-content;
+}
+
+#view-projects:hover {
+    cursor: pointer;
+}
+
+#view-projects:hover #arrow-icon {
+    transform: translateX(7px);
+    transition: transform 0.3s ease;
+}
+
+#view-projects:hover #view-text {
+    text-decoration: underline;
+    text-decoration-color: #2c6fbb;
+    text-decoration-thickness: 2px;
 }

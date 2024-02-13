@@ -57,7 +57,7 @@
             <div id="education">
                 <div class="inner">
                     <!-- Education -->
-                    <h2>Education</h2>
+                    <h2>Education<mat-icon id="title-icon">folder_open</mat-icon></h2>
                     <mat-card class="resume-card">
                         <div id="title">
                             <b>Louisiana State University</b>
@@ -100,7 +100,7 @@
                     </mat-card>
                     <!-- Work Experience -->
                     <div id="work">
-                        <h2>Work</h2>
+                        <h2>Work<mat-icon id="title-icon">work_outline</mat-icon></h2>
                         <mat-card class="resume-card">
                             <div id="title">
                                 <b>Software Engineer Intern</b>
@@ -147,7 +147,7 @@
                 </div>
                 <!-- Personal projects -->
                 <div id="projects">
-                    <h2>Personal Projects</h2>
+                    <h2>Personal Projects<mat-icon id="title-icon">desktop_mac</mat-icon></h2>
                     <div style="display: flex;">
                         <mat-card class="project-card"
                             (click)="routeToLink('https://github.com/ChristopherTRoss/BudgetMaster')">
@@ -205,19 +205,11 @@
                             </div>
                         </mat-card>
                     </div>
+                    <div id="view-projects" (click)="routeToLink('https://github.com/ChristopherTRoss?tab=repositories')">
+                        <span id="view-text">View All Projects</span>
+                        <mat-icon id="arrow-icon">keyboard_arrow_right</mat-icon>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <!-- Footer -->
-        <div id="footer">
-            <div class="inner">
-                <span class="right">
-                    <a class="bottom" target="_blank" href="mailto:cross22@lsu.edu">Email</a> &nbsp; / &nbsp;
-                    <a class="bottom" target="_blank" href="https://github.com/ChristopherTRoss/">GitHub</a> &nbsp; /
-                    &nbsp;
-                    <a class="bottom" target="_blank" href="https://www.linkedin.com/in/christophertross1/">LinkedIn</a>
-                    &nbsp;&nbsp;&nbsp;
-                </span>
             </div>
         </div>
     </div>
