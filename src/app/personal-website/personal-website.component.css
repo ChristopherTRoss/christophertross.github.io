@@ -12,7 +12,7 @@ body {
     height: 15px;
     width: 100%;
     line-height: 15px;
-    background: #4C5364;
+    background: #2c6fbb;
     font-size: 19px;
     top: 0;
     z-index: 500;
@@ -25,12 +25,11 @@ body {
 
 #header {
     padding-top: 70px;
-    padding-bottom: 20px;
     margin-top: -60px;
     text-align: center;
     font-size: 60px;
     color: white;
-    background-color: #4C5364;
+    background-color: #2c6fbb;
     min-width: 750px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
@@ -54,12 +53,6 @@ img.top {
     margin-left: 10px;
 }
 
-img.top:hover {
-    opacity: 0.5;
-    filter: alpha(opacity=50);
-    /* For IE8 and earlier */
-}
-
 .inner {
     max-width: 1024px;
     margin: 0 auto;
@@ -73,7 +66,7 @@ img.top:hover {
 }
 
 #about {
-    background-color: #C26868;
+    background-color: #2c6fbb;
     min-width: 750px;
 }
 
@@ -173,11 +166,9 @@ hr {
 }
 
 #exp {
-    /*Background color of Education-Projects*/
     background-color: #efeeeb;
     height: auto;
     min-width: 750px;
-
 }
 
 #education {
@@ -258,7 +249,7 @@ hr {
 }
 
 .project-card:hover {
-    box-shadow: 1px 8px 20px rgb(188, 187, 187);
+    box-shadow: 1px 8px 20px rgb(170, 168, 168);
     -webkit-transition:  box-shadow .1s ease-in;
     cursor: pointer;
 }
@@ -272,7 +263,7 @@ hr {
 }
 
 #footer {
-    background: #4C5364;
+    background: #2c6fbb;
     min-height: 30px;
     min-width: 750px;
     text-align: left;
