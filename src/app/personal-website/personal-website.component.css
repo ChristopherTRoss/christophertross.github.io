@@ -1,0 +1,312 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+#nav {
+    min-height: 30px;
+    position: fixed;
+    padding-top: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    height: 15px;
+    width: 100%;
+    line-height: 15px;
+    background: #4C5364;
+    font-size: 19px;
+    top: 0;
+    z-index: 500;
+
+}
+
+#menu-center a:hover {
+    border-bottom-width: 3px !important;
+}
+
+#header {
+    padding-top: 70px;
+    padding-bottom: 20px;
+    margin-top: -60px;
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    background-color: #4C5364;
+    min-width: 750px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+#education, #work, #projects {
+    padding-top: 35px;
+}
+
+p.name {
+    margin-bottom: 0px;
+}
+
+img.top {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+img.top:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    /* For IE8 and earlier */
+}
+
+.inner {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.inner-terminal {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+#about {
+    background-color: #C26868;
+    min-width: 750px;
+}
+
+#code {
+    border-radius: 5px;
+    width: 750px;
+    margin: 0 auto;
+    font-size: 30px;
+    background: #ccc;
+    /*Adjust height of terminal box*/
+    height: 25px;
+    font-family: Verdana, Geneva, sans-serif;
+    text-align: left;
+    font-size: 13.5px;
+    color: #fafafa;
+    height: 100%;
+}
+
+#console {
+    width: 670px;
+    padding: 40px;
+    margin: 0 auto;
+    background: #383737;
+}
+
+#dot1 {
+    height: 11px;
+    width: 11px;
+    background-color: #FF605C;
+    border-radius: 50%;
+    /*Adjust height and position of dots*/
+    position: relative;
+    left: -33.5px;
+    top: -56.3px;
+}
+
+#dot2 {
+    height: 11px;
+    width: 11px;
+    background-color: #FFBD44;
+    border-radius: 50%;
+    /*Adjust height and position of dots*/
+    position: relative;
+    left: 27.4px;
+    top: 5.5px;
+}
+
+#dot3 {
+    height: 11px;
+    width: 11px;
+    background-color: #00CA4E;
+    border-radius: 50%;
+    /*Adjust height and position of dots*/
+    position: relative;
+    left: 48px;
+    top: -5.3px;
+}
+
+span.answer {
+    color: #ccc;
+}
+
+a.console {
+    color: #ccc;
+}
+
+a.console:hover {
+    opacity: 0.5;
+}
+
+.blink {
+    animation: blinkingText 1.3s linear infinite;
+}
+
+@keyframes blinkingText {
+    0% {
+        visibility: hidden;
+    }
+
+    50% {
+        visibility: hidden;
+    }
+
+    100% {
+        color: #fafafa;
+    }
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+#exp {
+    /*Background color of Education-Projects*/
+    background-color: #efeeeb;
+    height: auto;
+    min-width: 750px;
+
+}
+
+#education {
+    border-radius: 2px;
+    width: 750px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 17px;
+    line-height: 150%;
+}
+
+.right {
+    float: right;
+}
+
+#title {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#activites {
+    padding-top: 1em;
+}
+
+.resume-card {
+    padding: 1.5em;
+    background-color: #efeeeb;
+    box-shadow: none;
+    border: 2px solid #6495ED;
+    border-radius: 15px / 15px;
+}
+
+.resume-card:hover {
+    box-shadow: 1px 8px 20px rgb(188, 187, 187);
+    -webkit-transition:  box-shadow .1s ease-in;
+}
+
+.skill {
+    border: 1px solid #6495ED;
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: fit-content;
+    display: inline-block;
+    font-size: 10px;
+    line-height: 1.5em;
+    padding: 7px 18px;
+    margin-top: 0.8em;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+}
+
+#projects {
+    padding-bottom: 20px;
+}
+
+.projects-title {
+    font-weight: bold;
+    font-size: 1.1em;
+    padding-bottom: 10px;;
+}
+
+.projectLink {
+    color: black;
+}
+
+.project-card {
+    width: 49%;
+    padding: 1em;
+    background-color: #efeeeb;
+    box-shadow: none;
+    border: 2px solid #6495ED;
+    border-radius: 5%;
+}
+
+.project-card:hover {
+    box-shadow: 1px 8px 20px rgb(188, 187, 187);
+    -webkit-transition:  box-shadow .1s ease-in;
+    cursor: pointer;
+}
+
+#card-spacing {
+    margin-left: 20px;
+}
+
+.skill-container {
+    margin-top: auto;
+}
+
+#footer {
+    background: #4C5364;
+    min-height: 30px;
+    min-width: 750px;
+    text-align: left;
+    color: #fafafa;
+    padding-top: 18px;
+    font-size: 15px;
+    line-height: 10px;
+    font-family: 'Open Sans', sans-serif;
+    top: 10px;
+}
+
+.bottom {
+    color: #fafafa;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#menu-center a {
+    color: #fafafa;
+    text-decoration: none;
+    border: 0 solid #FFF;
+    border-bottom-width: 0;
+}
+
+.link,
+a.link:hover {
+    border-bottom-width: 3px !important;
+    color: #fafafa;
+    text-decoration: none;
+    border: 0 solid #FFF;
+    border-bottom-width: 0;
+}
+
+.bottom:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
