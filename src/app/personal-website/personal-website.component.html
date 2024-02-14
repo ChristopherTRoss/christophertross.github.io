@@ -4,6 +4,7 @@
             <div class="inner">
                 <span class="right">
                     <div id="menu-center">
+                        &nbsp;&nbsp;&nbsp;
                         <a href="#top" class="link">Home</a>&nbsp;&nbsp;&nbsp;
                         <a href="#about">About</a>&nbsp;&nbsp;&nbsp;
                         <a href="#education">Education</a>&nbsp;&nbsp;&nbsp;
@@ -59,10 +60,13 @@
                     <!-- Education -->
                     <h2>Education<mat-icon id="title-icon">folder_open</mat-icon></h2>
                     <mat-card class="resume-card">
-                        <div id="title">
-                            <b>Louisiana State University</b>
-                            <span class="right"><i>2014 - 2018</i></span><br /><b>Computer Science, B.S.</b>
-                            <span class="right"><i>Baton Rouge, LA</i></span><br />
+                        <div class="title-row">
+                            <b class="title-left">Louisiana State University</b>
+                            <span class="title-right">2014 - 2018</span>
+                        </div>
+                        <div class="title-row">
+                            <span class="title-left">Computer Science, B.S.</span>
+                            <span class="title-right">Baton Rouge, LA</span><br>
                         </div>
                         <div id="activites">Activities:</div>
                         <ul style="list-style:circle;">
@@ -102,10 +106,13 @@
                     <div id="work">
                         <h2>Work<mat-icon id="title-icon">work_outline</mat-icon></h2>
                         <mat-card class="resume-card">
-                            <div id="title">
-                                <b>Software Engineer Intern</b>
-                                <span class="right"><i>May - August 2018</i></span><br /><b>Department of Defense</b>
-                                <span class="right"><i>Eglin AFB, FL</i></span><br />
+                            <div class="title-row">
+                                <b class="title-left">Software Engineer Intern</b>
+                                <span class="title-right">May - August 2018</span>
+                            </div>
+                            <div class="title-row">
+                                <span class="title-left">Department of Defense</span>
+                                <span class="title-right">Eglin AFB, FL</span><br>
                             </div>
                             <ul style="list-style:circle;">
                                 <li>Developed and implemented a site wide notification system for the squadron's website
@@ -123,10 +130,13 @@
                         </mat-card>
                         <br>
                         <mat-card class="resume-card">
-                            <div id="title">
-                                <b>Software Engineer Intern</b>
-                                <span class="right"><i>May - July 2017</i></span><br /><b>Jacobs Technology</b>
-                                <span class="right"><i>Fort Walton Beach, FL</i></span><br />
+                            <div class="title-row">
+                                <b class="title-left">Software Engineer Intern</b>
+                                <span class="title-right">May - July 2017</span>
+                            </div>
+                            <div class="title-row">
+                                <span class="title-left">Jacobs Technology</span>
+                                <span class="title-right">Fort Walton Beach, FL</span><br>
                             </div>
                             <ul style="list-style:circle;">
                                 <li>Designed and created a SQL database for storing and retrieving company information
@@ -177,7 +187,7 @@
                         </mat-card>
                     </div>
 
-                    <div class="project-row" style="display: flex; padding-top: 20px;">
+                    <div class="project-row">
                         <mat-card class="project-card"
                             (click)="routeToLink('https://github.com/ChristopherTRoss/budget-plus')">
                             <div class="projects-title">
@@ -205,7 +215,8 @@
                             </div>
                         </mat-card>
                     </div>
-                    <div id="view-projects" (click)="routeToLink('https://github.com/ChristopherTRoss?tab=repositories')">
+                    <div id="view-projects"
+                        (click)="routeToLink('https://github.com/ChristopherTRoss?tab=repositories')">
                         <span id="view-text">View All Projects</span>
                         <mat-icon id="arrow-icon">keyboard_arrow_right</mat-icon>
                     </div>

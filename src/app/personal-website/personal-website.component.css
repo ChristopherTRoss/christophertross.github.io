@@ -26,6 +26,11 @@ body {
     }
 }
 
+@media (max-width: 415px) {
+    #nav {
+        font-size: 16px !important;
+    }
+}
 
 #nav {
     min-height: 30px;
@@ -210,13 +215,18 @@ hr {
     line-height: 150%;
 }
 
-.right {
-    float: right;
+.title-row {
+    display: flex;
+    flex-flow: row;
 }
 
-#title {
-    font-weight: bold;
-    font-size: 1.1em;
+.title-right {
+    width: 50%;
+    text-align: end;
+}
+
+.title-left {
+    width: 50%;
 }
 
 #activites {
@@ -272,6 +282,7 @@ hr {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
+    padding-bottom: 20px;
 }
 
 .project-card {
@@ -331,7 +342,7 @@ a.link:hover {
 }
 
 #view-projects {
-    margin-top: 1.75em;
+    margin-top: .75em;
     width: fit-content;
 }
 
