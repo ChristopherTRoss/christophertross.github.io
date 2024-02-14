@@ -16,7 +16,7 @@ body {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 625px) {
     .project-row {
         display: unset !important;
     }
@@ -253,11 +253,10 @@ hr {
 .skill {
     border: 1px solid #6495ED;
     margin-right: 10px;
-    text-transform: uppercase;
     font-weight: 500;
     width: fit-content;
     display: inline-block;
-    font-size: 10px;
+    font-size: 11px;
     line-height: 1.5em;
     padding: 7px 18px;
     margin-top: 0.8em;
