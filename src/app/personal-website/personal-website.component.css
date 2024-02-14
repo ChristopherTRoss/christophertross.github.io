@@ -26,9 +26,28 @@ body {
     }
 }
 
-@media (max-width: 415px) {
-    #nav {
-        font-size: 16px !important;
+@media (max-width: 500px) {
+    .project-row {
+        display: unset !important;
+    }
+    .project-card {
+        width: 100% !important;
+        margin-bottom: 1.2em !important;
+    }
+}
+
+@media (max-width: 525px) {
+    .title-row {
+        display: unset !important;
+    }
+    
+    .title-right {
+        width: 100% !important;
+        text-align: left !important;
+    }
+    
+    .title-left {
+        width: 100% !important;
     }
 }
 
@@ -48,7 +67,8 @@ body {
 }
 
 #menu-center a:hover {
-    border-bottom-width: 3px !important;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
 }
 
 #header {
@@ -84,7 +104,6 @@ img.top {
 img.top:hover {
     opacity: 0.5;
     filter: alpha(opacity=50);
-    /* For IE8 and earlier */
 }
 
 .inner {
