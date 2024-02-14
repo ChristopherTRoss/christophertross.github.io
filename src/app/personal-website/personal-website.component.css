@@ -199,6 +199,10 @@ hr {
     border-width: 1px;
 }
 
+.right {
+    float: right;
+}
+
 #exp {
     background-color: #ffffff;
     height: auto;
