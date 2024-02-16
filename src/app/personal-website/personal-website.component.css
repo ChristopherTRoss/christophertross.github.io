@@ -4,9 +4,18 @@ body {
     height: 100%;
 }
 
+#top {
+    overflow: auto;
+}
+
 @media (max-width: 415px) {
     #nav {
         font-size: 16px !important;
+    }
+
+    #menu-center {
+        float: unset !important;
+        text-align: center;
     }
 }
 
@@ -230,7 +239,7 @@ hr {
     border-width: 1px;
 }
 
-.right {
+#menu-center {
     float: right;
 }
 
