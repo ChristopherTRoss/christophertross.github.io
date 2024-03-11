@@ -154,7 +154,7 @@ img.top:hover {
     font-size: 15px;
     color: #fafafa;
     height: 100%;
-    max-width: 68em;
+    max-width: 63em;
 }
 
 #console {
@@ -257,7 +257,7 @@ hr {
     letter-spacing: 0.1em;
     font-size: 17px;
     line-height: 150%;
-    max-width: 60em;
+    max-width: 55em;
 }
 
 .title-row {
