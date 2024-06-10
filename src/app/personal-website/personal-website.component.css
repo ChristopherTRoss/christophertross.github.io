@@ -349,6 +349,10 @@ hr {
     margin-top: auto;
 }
 
+.skill-padding {
+    padding-bottom: 1rem;
+}
+
 #menu-center a {
     color: #fafafa;
     text-decoration: none;
