@@ -19,7 +19,7 @@ body {
     }
 }
 
-@media (max-width: 985px) {
+@media (max-width: 1000px) {
     #about {
         padding-left: 1em !important;
         padding-right: 1em !important;
@@ -120,8 +120,8 @@ img.top {
 }
 
 img.home-icon {
-    width: 1.8em;
-    height: 1.8em;
+    width: 1.6em;
+    height: 1.6em;
     margin-left: 10px;
     border: 0.5px solid white;
     border-radius: 2em;
@@ -134,7 +134,11 @@ img.top:hover, img.home-icon:hover {
 
 #menu-left {
     float: left;
-    margin-top: -0.525em;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 #menu-right {
@@ -361,7 +365,7 @@ hr {
 }
 
 .skill-padding {
-    padding-bottom: 1rem;
+    padding-bottom: 1.75rem;
 }
 
 #menu-right a {
