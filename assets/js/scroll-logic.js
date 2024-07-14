@@ -5,11 +5,11 @@ $(document).ready(function () {
 //Underlines tab on navbar based on position on site
 function onScroll(event){
     var scrollPos = $(document).scrollTop();
-    $('#menu-center a').each(function () {
+    $('#menu-right a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
         if (refElement.position().top- 60 <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            $('#menu-center a').removeClass("link");
+            $('#menu-right a').removeClass("link");
             currLink.addClass("link");
         }
         else{
