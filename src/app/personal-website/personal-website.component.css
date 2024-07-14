@@ -96,7 +96,7 @@ body {
         filter: alpha(opacity=50);
     }
 
-    #menu-left img.home-icon:hover {
+    #menu-left a:hover {
         opacity: 0.5;
         filter: alpha(opacity=50);
     }
@@ -132,8 +132,8 @@ img.top {
 }
 
 img.home-icon {
-    width: 1.6em;
-    height: 1.6em;
+    width: 1.5em;
+    height: 1.5em;
     margin-left: 10px;
     border: 1px solid white;
     border-radius: 2em;
@@ -397,6 +397,7 @@ a.link:hover {
     text-decoration: none;
     border: 1px solid #FFF;
     border-bottom-width: 0;
+    font-weight: 500;
 }
 
 .mat-icon {
