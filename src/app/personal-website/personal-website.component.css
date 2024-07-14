@@ -95,6 +95,11 @@ body {
         opacity: 0.5;
         filter: alpha(opacity=50);
     }
+
+    #menu-left img.home-icon:hover {
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+    }
 }
 
 #header {
