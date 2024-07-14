@@ -75,11 +75,12 @@ body {
     font-family: "Roboto", sans-serif;
     height: auto;
     line-height: 15px;
-    background: #2968af;
     font-size: 19px;
     top: 0;
     z-index: 500;
     width: 100%;
+    background-color: rgba(41, 104, 175, 0.9);
+    backdrop-filter: blur(4px);
 }
 
 @media (hover: hover) {
@@ -377,7 +378,7 @@ hr {
 
 .link,
 a.link:hover {
-    border-bottom-width: 3px !important;
+    border-bottom-width: 2px !important;
     color: #fafafa;
     text-decoration: none;
     border: 1px solid #FFF;
