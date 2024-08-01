@@ -72,7 +72,7 @@ body {
     min-height: 1.8rem;
     position: fixed;
     padding-top: 0.8rem;
-    font-family: "Roboto", sans-serif;
+    font-family: "Open Sans", sans-serif;
     height: auto;
     line-height: 1rem;
     font-size: 1.2rem;
@@ -284,8 +284,8 @@ hr {
 #education {
     border-radius: 2px;
     margin: 0 auto;
-    font-family: "Roboto", sans-serif;
-    letter-spacing: 0.1em;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 0.1rem;
     font-size: 17px;
     line-height: 150%;
 }
@@ -295,13 +295,23 @@ hr {
     flex-flow: row;
 }
 
-.title-right {
-    width: 50%;
-    text-align: end;
+.info-row {
+    display: flex;
+    padding-top: 0.25rem;
+}
+
+.info-block {
+    display: inline-flex;
 }
 
 .title-left {
-    width: 50%;
+    font-size: 1.15rem;
+}
+
+.info-text {
+    padding-left: 0.05rem;
+    padding-right: 1rem;
+    font-size: 0.95rem;
 }
 
 #activites {
@@ -380,7 +390,7 @@ hr {
 }
 
 .skill-padding {
-    padding-bottom: 1.75rem;
+    padding-bottom: 2.1rem;
 }
 
 #menu-right a {
@@ -413,6 +423,17 @@ a.link:hover {
 #title-icon {
     color: #2968af;
     padding-left: 0.25em;
+}
+
+#header-icon {
+    color: #2968af;
+    font-size: 1.25rem;
+}
+
+#info-icon {
+    color: #2968af;
+    padding-top: 0.25rem;
+    font-size: 1.15rem;
 }
 
 #nav-icon {
