@@ -301,7 +301,7 @@ hr {
 }
 
 .info-block {
-    display: inline-flex;
+    display: inline-block;
 }
 
 .title-left {
