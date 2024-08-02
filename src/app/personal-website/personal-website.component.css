@@ -290,6 +290,12 @@ hr {
     line-height: 150%;
 }
 
+.list-items {
+    list-style: circle;
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+}
+
 .title-row {
     display: flex;
     flex-flow: row;
@@ -310,12 +316,17 @@ hr {
 
 .info-text {
     padding-left: 0.05rem;
-    padding-right: 1rem;
+    padding-right: 0.8rem;
     font-size: 0.95rem;
 }
 
 #activites {
     padding-top: 1em;
+    font-weight: bold;
+}
+
+#coursework {
+    font-weight: bold;
 }
 
 .resume-card {
@@ -390,7 +401,7 @@ hr {
 }
 
 .skill-padding {
-    padding-bottom: 2.1rem;
+    padding-bottom: 2.25rem;
 }
 
 #menu-right a {
