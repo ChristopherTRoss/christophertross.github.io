@@ -19,5 +19,4 @@ export class PersonalWebsiteComponent {
   routeToLink(url: string) {
     window.location.href = url;
   }
-  
 }
