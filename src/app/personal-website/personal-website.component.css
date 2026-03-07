@@ -438,3 +438,50 @@ h2{font-family:var(--font-display);font-size:1.35rem;font-weight:700;letter-spac
   .toggle-label{display:none}
   h2{font-size:1.2rem}
 }
+/* ── FOOTER ── */
+#site-footer {
+  background: var(--bg-hero-end);
+  width: 100%;
+  padding: 2rem 1.25rem;
+  transition: background var(--transition-slow);
+}
+[data-theme="dark"] #site-footer { background: #0d0d0d; }
+.footer-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .6rem;
+  text-align: center;
+}
+.footer-name {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgba(255,255,255,.9);
+  letter-spacing: -.01em;
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+}
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  color: rgba(255,255,255,.6);
+  text-decoration: none;
+  font-size: .83rem;
+  font-family: var(--font-display);
+  font-weight: 500;
+  transition: color var(--transition);
+}
+.footer-link:hover { color: rgba(255,255,255,.95); }
+.footer-dot { color: rgba(255,255,255,.25); font-size: .9rem; }
+.footer-copy {
+  font-size: .72rem;
+  color: rgba(255,255,255,.25);
+  letter-spacing: .04em;
+}
