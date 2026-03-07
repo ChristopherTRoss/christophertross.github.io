@@ -430,13 +430,66 @@ h2{font-family:var(--font-display);font-size:1.35rem;font-weight:700;letter-spac
 .card-animate{opacity:0;transform:translateY(20px);transition:opacity .5s ease,transform .5s ease}
 .card-animate.visible{opacity:1;transform:translateY(0)}
 
-/* Responsive — fluid-first, minimal breakpoints */
+/* ── MOBILE ── */
 @media(max-width:600px){
-  .project-row{flex-direction:column}
-  .project-card{flex:none;width:100%}
-  #menu-right a{padding:.2rem .35rem}
-  .toggle-label{display:none}
-  h2{font-size:1.2rem}
+
+  /* Nav — shrink pill, smaller text */
+  #nav {
+    top: .5rem;
+    padding: .45rem .75rem;
+    width: calc(100% - 1.25rem);
+  }
+  #menu-right a {
+    padding: .3rem .55rem;
+    font-size: .78rem;
+  }
+  #nav-monogram { width:24px; height:24px; font-size:.6rem; }
+  .toggle-track { width:40px; height:20px; }
+  .toggle-thumb { width:15px; height:15px; }
+  [data-theme="dark"] .toggle-thumb { left: calc(100% - 18px); }
+  .toggle-icon { font-size:.55rem; }
+
+  /* Hero — tighter padding, smaller heading */
+  #home-items { padding-top: calc(var(--nav-h) + 2.5rem); }
+  #header { font-size: 2rem; }
+  p.name { margin-bottom: .15rem; }
+
+  /* Terminal — smaller font, tighter padding */
+  #console {
+    font-size: .72rem;
+    padding: .85rem 1rem;
+    line-height: 1.7;
+  }
+  .inner-terminal { padding-top: .9em; padding-bottom: 2.5em; }
+
+  /* Cards — full width, tighter padding */
+  .resume-card { padding: 1rem; }
+  .title-left { font-size: .92rem; }
+  .info-row { gap: .4rem; }
+  .info-block { font-size: .8rem; }
+  .list-items { font-size: .8rem; }
+
+  /* Section spacing */
+  #exp { padding: .5rem 0 2rem; }
+  #education, #work, #projects { padding-top: 1.5rem; }
+  #education, #about {
+    width: calc(100% - 1.25rem);
+  }
+  h2 { font-size: 1.1rem; }
+
+  /* Projects — single column */
+  .project-row { flex-direction: column; gap: .75rem; padding-bottom: .75rem; }
+  .project-card { flex: none; width: 100%; }
+  .projects-title { font-size: .9rem; }
+
+  /* Footer */
+  #site-footer { padding: 1.5rem 1rem; }
+}
+
+/* Tablet tweaks */
+@media(max-width:768px) and (min-width:601px){
+  #header { font-size: 2.8rem; }
+  #menu-right a { padding: .35rem .7rem; }
 }
 /* ── FOOTER ── */
 #site-footer {
