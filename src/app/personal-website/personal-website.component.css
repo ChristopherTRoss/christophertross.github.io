@@ -636,12 +636,6 @@ h2 {
 #view-projects:hover #arrow-icon { color: #fff; transform: translateX(3px); }
 #arrow-icon { color: var(--accent); transition: transform var(--transition), color var(--transition); font-family: 'Material Icons Outlined'; font-size: 1rem; vertical-align: middle; }
 
-/* mobile */
-@media(max-width:650px) {
-  .ss-sidebar { display: none; }
-  .ss-content { padding: 1rem; }
-}
-
 /* Animations */
 @keyframes fadeUp{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:translateY(0)}}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
@@ -649,13 +643,53 @@ h2 {
 .card-animate{opacity:0;transform:translateY(20px);transition:opacity .5s ease,transform .5s ease}
 .card-animate.visible{opacity:1;transform:translateY(0)}
 
-/* Responsive — fluid-first, minimal breakpoints */
-@media(max-width:600px){
-  .project-row{flex-direction:column}
-  .project-card{flex:none;width:100%}
-  #menu-right a{padding:.2rem .35rem}
-  .toggle-label{display:none}
-  h2{font-size:1.2rem}
+/* ── MOBILE ── */
+@media(max-width:650px) {
+  /* Nav */
+  #nav { top:.5rem; padding:.45rem .75rem; width:calc(100% - 1.25rem); }
+  #menu-right a { padding:.3rem .55rem; font-size:.78rem; }
+  #nav-monogram { width:24px; height:24px; font-size:.6rem; }
+  .toggle-track { width:40px; height:20px; }
+  .toggle-thumb { width:15px; height:15px; }
+  [data-theme="dark"] .toggle-thumb { left:calc(100% - 18px); }
+  .toggle-icon { font-size:.55rem; }
+
+  /* Hero */
+  #home-items { padding-top:calc(var(--nav-h) + 2.5rem); }
+  #header { font-size:2rem; }
+  #console { font-size:.72rem; padding:.85rem 1rem; line-height:1.7; }
+  .inner-terminal { padding-top:.9em; padding-bottom:2.5em; }
+  #about { width:calc(100% - 1.25rem); }
+
+  /* Settings windows */
+  #education, #projects { width:calc(100% - 1.25rem); }
+  .ss-sidebar { display:none; }
+  .ss-content { padding:.85rem 1rem; }
+  .ss-window { border-radius:10px; }
+  .ss-titlebar { height:34px; }
+  .ss-group { margin-bottom:.75rem; }
+  .ss-row { padding:.6rem .75rem; gap:.55rem; }
+  .ss-row-icon { width:28px; height:28px; border-radius:7px; }
+  .ss-row-icon .material-icons-outlined { font-size:.95rem; }
+  .ss-row-title { font-size:.83rem; }
+  .ss-row-sub { font-size:.74rem; }
+  .ss-row-detail { font-size:.74rem; }
+  .ss-chevron { display:none; }
+  .skill { font-size:.64rem; padding:2px 7px; }
+
+  /* Sections */
+  #exp { padding:.5rem 0 2rem; }
+  #education, #work, #projects { padding-top:1.25rem; }
+
+  /* Footer */
+  #site-footer { padding:1.5rem 1rem; }
+}
+
+/* Tablet */
+@media(max-width:768px) and (min-width:651px) {
+  #header { font-size:2.8rem; }
+  #menu-right a { padding:.35rem .7rem; }
+  .ss-sidebar { width:160px; }
 }
 /* ── FOOTER ── */
 #site-footer {
