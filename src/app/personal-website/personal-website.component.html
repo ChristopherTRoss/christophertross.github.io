@@ -80,16 +80,13 @@
     <div id="education">
 
       <div class="ss-window card-animate">
-        <div class="ss-titlebar">
-          <div class="ss-dots">
-            <div class="ss-dot ss-dot-red"></div>
-            <div class="ss-dot ss-dot-yellow"></div>
-            <div class="ss-dot ss-dot-green"></div>
-          </div>
-          <span class="ss-title">Education</span>
-        </div>
-        <div class="ss-body">
+<div class="ss-body">
           <div class="ss-sidebar">
+            <div class="ss-dots" style="padding:.7rem .45rem .5rem">
+              <div class="ss-dot ss-dot-red"></div>
+              <div class="ss-dot ss-dot-yellow"></div>
+              <div class="ss-dot ss-dot-green"></div>
+            </div>
             <div class="ss-sidebar-label">Sections</div>
             <div class="ss-sidebar-item active" data-target="grp-edu-degree" (click)="sidebarClick($any($event.currentTarget))">
               <div class="ss-sidebar-icon-wrap" style="background:#1e5fa8">
@@ -116,11 +113,12 @@
               Skills
             </div>
           </div>
-          <div class="ss-content">
+            <div class="ss-content">
+            <div class="ss-content-header">Education</div>
             <div class="ss-group" id="grp-edu-degree">
               <div class="ss-group-header">Degree</div>
               <div class="ss-row">
-                <div class="ss-row-icon"><span class="material-icons-outlined">school</span></div>
+                <div class="ss-row-icon" style="background:#8e8e93"><span class="material-icons-outlined">school</span></div>
                 <div class="ss-row-body">
                   <div class="ss-row-title">Computer Science, B.S.</div>
                   <div class="ss-row-sub">
@@ -177,16 +175,13 @@
 
       <div id="work">
         <div class="ss-window card-animate">
-          <div class="ss-titlebar">
-            <div class="ss-dots">
-              <div class="ss-dot ss-dot-red"></div>
-              <div class="ss-dot ss-dot-yellow"></div>
-              <div class="ss-dot ss-dot-green"></div>
-            </div>
-            <span class="ss-title">Work Experience</span>
-          </div>
-          <div class="ss-body">
-            <div class="ss-sidebar">
+<div class="ss-body">
+          <div class="ss-sidebar">
+              <div class="ss-dots" style="padding:.7rem .45rem .5rem">
+                <div class="ss-dot ss-dot-red"></div>
+                <div class="ss-dot ss-dot-yellow"></div>
+                <div class="ss-dot ss-dot-green"></div>
+              </div>
               <div class="ss-sidebar-label">Companies</div>
               <div class="ss-sidebar-item active" data-target="grp-ibm" (click)="sidebarClick($any($event.currentTarget))">
                 <div class="ss-sidebar-icon-wrap" style="background:#1e5fa8">
@@ -208,6 +203,7 @@
               </div>
             </div>
             <div class="ss-content">
+              <div class="ss-content-header">Work Experience</div>
               <div class="ss-group" id="grp-ibm">
                 <div class="ss-group-header">IBM · 2018–Present</div>
                 <div class="ss-row">
@@ -277,16 +273,13 @@
 
     <div id="projects">
       <div class="ss-window card-animate">
-        <div class="ss-titlebar">
-          <div class="ss-dots">
-            <div class="ss-dot ss-dot-red"></div>
-            <div class="ss-dot ss-dot-yellow"></div>
-            <div class="ss-dot ss-dot-green"></div>
-          </div>
-          <span class="ss-title">Personal Projects</span>
-        </div>
         <div class="ss-body">
           <div class="ss-sidebar">
+            <div class="ss-dots" style="padding:.65rem .5rem .4rem">
+              <div class="ss-dot ss-dot-red"></div>
+              <div class="ss-dot ss-dot-yellow"></div>
+              <div class="ss-dot ss-dot-green"></div>
+            </div>
             <div class="ss-sidebar-label">All Projects</div>
             <div class="ss-sidebar-item active" data-target="grp-all" (click)="sidebarClick($any($event.currentTarget))">
               <div class="ss-sidebar-icon-wrap" style="background:#34a853">
@@ -321,7 +314,8 @@
               All Projects
             </div>
           </div>
-          <div class="ss-content" id="projects-content">
+            <div class="ss-content" id="projects-content">
+            <div class="ss-content-header">Personal Projects</div>
             <div class="ss-group">
               <div class="ss-row" data-tags="android" style="cursor:pointer" (click)="routeToLink('https://github.com/ChristopherTRoss/BudgetMaster')">
                 <div class="ss-row-icon" style="background:#34a853"><span class="material-icons-outlined">savings</span></div>
