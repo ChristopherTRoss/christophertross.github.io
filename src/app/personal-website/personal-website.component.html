@@ -90,16 +90,34 @@
         </div>
         <div class="ss-body">
           <div class="ss-sidebar">
-            <div class="ss-sidebar-label">Degrees</div>
-            <div class="ss-sidebar-item active">
+            <div class="ss-sidebar-label">Sections</div>
+            <div class="ss-sidebar-item active" data-target="grp-edu-degree" (click)="sidebarClick($any($event.currentTarget))">
               <div class="ss-sidebar-icon-wrap" style="background:#1e5fa8">
                 <span class="material-icons-outlined">school</span>
               </div>
-              LSU
+              Degree
+            </div>
+            <div class="ss-sidebar-item" data-target="grp-edu-honors" (click)="sidebarClick($any($event.currentTarget))">
+              <div class="ss-sidebar-icon-wrap" style="background:#34a853">
+                <span class="material-icons-outlined">emoji_events</span>
+              </div>
+              Honors
+            </div>
+            <div class="ss-sidebar-item" data-target="grp-edu-courses" (click)="sidebarClick($any($event.currentTarget))">
+              <div class="ss-sidebar-icon-wrap" style="background:#9c5cca">
+                <span class="material-icons-outlined">menu_book</span>
+              </div>
+              Courses
+            </div>
+            <div class="ss-sidebar-item" data-target="grp-edu-skills" (click)="sidebarClick($any($event.currentTarget))">
+              <div class="ss-sidebar-icon-wrap" style="background:#f5a623">
+                <span class="material-icons-outlined">code</span>
+              </div>
+              Skills
             </div>
           </div>
           <div class="ss-content">
-            <div class="ss-group">
+            <div class="ss-group" id="grp-edu-degree">
               <div class="ss-group-header">Degree</div>
               <div class="ss-row">
                 <div class="ss-row-icon"><span class="material-icons-outlined">school</span></div>
@@ -112,7 +130,7 @@
                 </div>
               </div>
             </div>
-            <div class="ss-group">
+            <div class="ss-group" id="grp-edu-honors">
               <div class="ss-group-header">Activities &amp; Awards</div>
               <div class="ss-row">
                 <div class="ss-row-icon" style="background:#34a853"><span class="material-icons-outlined">emoji_events</span></div>
@@ -125,6 +143,9 @@
                   </ul>
                 </div>
               </div>
+            </div>
+            <div class="ss-group" id="grp-edu-courses">
+              <div class="ss-group-header">Coursework</div>
               <div class="ss-row">
                 <div class="ss-row-icon" style="background:#9c5cca"><span class="material-icons-outlined">menu_book</span></div>
                 <div class="ss-row-body">
@@ -137,7 +158,7 @@
                 </div>
               </div>
             </div>
-            <div class="ss-group">
+            <div class="ss-group" id="grp-edu-skills">
               <div class="ss-group-header">Skills</div>
               <div class="ss-row">
                 <div class="ss-row-icon" style="background:#f5a623"><span class="material-icons-outlined">code</span></div>
@@ -167,19 +188,19 @@
           <div class="ss-body">
             <div class="ss-sidebar">
               <div class="ss-sidebar-label">Companies</div>
-              <div class="ss-sidebar-item active">
+              <div class="ss-sidebar-item active" data-target="grp-ibm" (click)="sidebarClick($any($event.currentTarget))">
                 <div class="ss-sidebar-icon-wrap" style="background:#1e5fa8">
                   <span class="material-icons-outlined">computer</span>
                 </div>
                 IBM
               </div>
-              <div class="ss-sidebar-item">
+              <div class="ss-sidebar-item" data-target="grp-af" (click)="sidebarClick($any($event.currentTarget))">
                 <div class="ss-sidebar-icon-wrap" style="background:#5d6c7a">
                   <span class="material-icons-outlined">flight</span>
                 </div>
                 Air Force
               </div>
-              <div class="ss-sidebar-item">
+              <div class="ss-sidebar-item" data-target="grp-jacobs" (click)="sidebarClick($any($event.currentTarget))">
                 <div class="ss-sidebar-icon-wrap" style="background:#e8670e">
                   <span class="material-icons-outlined">engineering</span>
                 </div>
@@ -187,7 +208,7 @@
               </div>
             </div>
             <div class="ss-content">
-              <div class="ss-group">
+              <div class="ss-group" id="grp-ibm">
                 <div class="ss-group-header">IBM · 2018–Present</div>
                 <div class="ss-row">
                   <div class="ss-row-icon" style="background:#1e5fa8"><span class="material-icons-outlined">computer</span></div>
@@ -208,7 +229,7 @@
                   </div>
                 </div>
               </div>
-              <div class="ss-group">
+              <div class="ss-group" id="grp-af">
                 <div class="ss-group-header">US Air Force · May–Aug 2018</div>
                 <div class="ss-row">
                   <div class="ss-row-icon" style="background:#5d6c7a"><span class="material-icons-outlined">flight</span></div>
@@ -228,7 +249,7 @@
                   </div>
                 </div>
               </div>
-              <div class="ss-group">
+              <div class="ss-group" id="grp-jacobs">
                 <div class="ss-group-header">Jacobs · May–Jul 2017</div>
                 <div class="ss-row">
                   <div class="ss-row-icon" style="background:#e8670e"><span class="material-icons-outlined">engineering</span></div>
@@ -267,24 +288,30 @@
         <div class="ss-body">
           <div class="ss-sidebar">
             <div class="ss-sidebar-label">All Projects</div>
-            <div class="ss-sidebar-item active">
+            <div class="ss-sidebar-item active" data-target="grp-all" (click)="sidebarClick($any($event.currentTarget))">
               <div class="ss-sidebar-icon-wrap" style="background:#34a853">
                 <span class="material-icons-outlined">folder</span>
               </div>
               All
             </div>
             <div class="ss-sidebar-label" style="margin-top:.5rem">Tags</div>
-            <div class="ss-sidebar-item">
+            <div class="ss-sidebar-item" data-target="grp-android" (click)="sidebarClick($any($event.currentTarget))">
               <div class="ss-sidebar-icon-wrap" style="background:#f5a623">
                 <span class="material-icons-outlined">phone_android</span>
               </div>
               Android
             </div>
-            <div class="ss-sidebar-item">
+            <div class="ss-sidebar-item" data-target="grp-web" (click)="sidebarClick($any($event.currentTarget))">
               <div class="ss-sidebar-icon-wrap" style="background:#9c5cca">
                 <span class="material-icons-outlined">web</span>
               </div>
               Web
+            </div>
+            <div class="ss-sidebar-item" data-target="grp-java" (click)="sidebarClick($any($event.currentTarget))">
+              <div class="ss-sidebar-icon-wrap" style="background:#e8670e">
+                <span class="material-icons-outlined">coffee</span>
+              </div>
+              Java
             </div>
             <div class="ss-sidebar-label" style="margin-top:.5rem">Links</div>
             <div class="ss-sidebar-item" (click)="routeToLink('https://github.com/ChristopherTRoss?tab=repositories')" style="cursor:pointer">
@@ -294,9 +321,9 @@
               View All
             </div>
           </div>
-          <div class="ss-content">
+          <div class="ss-content" id="projects-content">
             <div class="ss-group">
-              <div class="ss-row" style="cursor:pointer" (click)="routeToLink('https://github.com/ChristopherTRoss/BudgetMaster')">
+              <div class="ss-row" data-tags="android" style="cursor:pointer" (click)="routeToLink('https://github.com/ChristopherTRoss/BudgetMaster')">
                 <div class="ss-row-icon" style="background:#34a853"><span class="material-icons-outlined">savings</span></div>
                 <div class="ss-row-body">
                   <div class="ss-row-title">BudgetMaster</div>
@@ -305,7 +332,7 @@
                 </div>
                 <span class="ss-chevron material-icons-outlined">chevron_right</span>
               </div>
-              <div class="ss-row" style="cursor:pointer" (click)="routeToLink('https://github.com/ChristopherTRoss/LsuEats')">
+              <div class="ss-row" data-tags="android" style="cursor:pointer" (click)="routeToLink('https://github.com/ChristopherTRoss/LsuEats')">
                 <div class="ss-row-icon" style="background:#f5a623"><span class="material-icons-outlined">restaurant</span></div>
                 <div class="ss-row-body">
                   <div class="ss-row-title">LSUEats</div>
@@ -314,7 +341,7 @@
                 </div>
                 <span class="ss-chevron material-icons-outlined">chevron_right</span>
               </div>
-              <div class="ss-row" style="cursor:pointer" (click)="routeToLink('https://github.com/ChristopherTRoss/budget-plus')">
+              <div class="ss-row" data-tags="java" style="cursor:pointer" (click)="routeToLink('https://github.com/ChristopherTRoss/budget-plus')">
                 <div class="ss-row-icon" style="background:#1e5fa8"><span class="material-icons-outlined">bar_chart</span></div>
                 <div class="ss-row-body">
                   <div class="ss-row-title">Budget+</div>
@@ -323,7 +350,7 @@
                 </div>
                 <span class="ss-chevron material-icons-outlined">chevron_right</span>
               </div>
-              <div class="ss-row" style="cursor:pointer" (click)="routeToLink('https://github.com/ChristopherTRoss/personal-website')">
+              <div class="ss-row" data-tags="web" style="cursor:pointer" (click)="routeToLink('https://github.com/ChristopherTRoss/personal-website')">
                 <div class="ss-row-icon" style="background:#9c5cca"><span class="material-icons-outlined">code</span></div>
                 <div class="ss-row-body">
                   <div class="ss-row-title">Personal Website</div>

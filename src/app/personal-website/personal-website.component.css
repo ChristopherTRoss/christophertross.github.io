@@ -534,6 +534,9 @@ h2 {
 [data-theme="dark"] .ss-row { border-bottom-color: rgba(255,255,255,0.05); }
 .ss-row:last-child { border-bottom: none; }
 .ss-row:hover { background: var(--accent-soft); }
+.ss-highlighted { background: rgba(30,95,168,0.08) !important; border-left: 3px solid rgba(30,95,168,0.5) !important; }
+[data-theme="dark"] .ss-highlighted { background: rgba(74,144,217,0.1) !important; border-left-color: rgba(74,144,217,0.5) !important; }
+.ss-group.ss-highlighted { border-color: var(--border-card); box-shadow: none; border-left: 3px solid rgba(30,95,168,0.5) !important; }
 
 .ss-row-icon {
   width: 32px; height: 32px;

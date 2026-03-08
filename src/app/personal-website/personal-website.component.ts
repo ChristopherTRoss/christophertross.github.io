@@ -134,4 +134,34 @@ scrollTo(event: Event, sectionId: string): void {
       });
     });
   }
+
+  sidebarClick(item: HTMLElement): void {
+    const target = item.getAttribute('data-target');
+    const sidebar = item.closest('.ss-sidebar') as HTMLElement;
+    const window_ = item.closest('.ss-window') as HTMLElement;
+    const content = window_.querySelector('.ss-content') as HTMLElement;
+
+    sidebar.querySelectorAll('.ss-sidebar-item').forEach(s => s.classList.remove('active'));
+    item.classList.add('active');
+
+    content.querySelectorAll<HTMLElement>('.ss-group, .ss-row').forEach(el => { el.classList.remove('ss-highlighted'); (el as HTMLElement).style.opacity = '1'; });
+
+    if (target === 'grp-ibm' || target === 'grp-af' || target === 'grp-jacobs' ||
+        target === 'grp-edu-degree' || target === 'grp-edu-honors' || target === 'grp-edu-courses' || target === 'grp-edu-skills') {
+      const grp = document.getElementById(target!);
+      if (grp) grp.querySelectorAll<HTMLElement>('.ss-row').forEach(r => r.classList.add('ss-highlighted'));
+      return;
+    }
+
+    const rows = content.querySelectorAll<HTMLElement>('.ss-row[data-tags]');
+    if (target === 'grp-all') {
+      rows.forEach(r => r.classList.add('ss-highlighted'));
+    } else {
+      const tagMap: Record<string, string> = { 'grp-android': 'android', 'grp-web': 'web', 'grp-java': 'java' };
+      const tag = tagMap[target!];
+      rows.forEach(r => {
+        if (r.getAttribute('data-tags') === tag) r.classList.add('ss-highlighted');
+      });
+    }
+  }
 }
